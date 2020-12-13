@@ -5,7 +5,7 @@ module.exports = function(app) {
     //reads api data
         app.get("/api/notes", function(req, res) {
     //reads all input data
-            fs.readFile(path.join(__dirname, "../db/db.json"), "utf-8", function(err, data) {
+            fs.readFile(path.join(__dirname, "../db/db.json"), "utf8", function(err, data) {
                 if (err) throw err;
     
                 res.json(JSON.parse(data));
