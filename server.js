@@ -10,6 +10,8 @@ var PORT = process.env.PORT || 8080;
 //tells the express app to parse date into understandable values
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+//sets the public folder as static
+app.use(express.static("public"));
 
 //exports the routes
 require("./routes/apiRoutes")(app);
