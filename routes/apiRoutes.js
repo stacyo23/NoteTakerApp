@@ -15,10 +15,10 @@ module.exports = function(app) {
             return res.status(200); 
           });
     
-        //   app.post("/api/notes", function (req, res) {
+          app.post("/api/notes", function (req, res) {
     
             
-        //   }); 
+          }); 
     
         //   app.delete("/api/notes/:id", function (req, res) {
     
