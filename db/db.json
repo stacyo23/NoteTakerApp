@@ -1,12 +1,17 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text",
+    "title": "monkey",
+    "text": "monkey",
     "id": 0
   },
   {
-    "title": "Potato Cat",
-    "text": "Potato Cat eats potatoes",
+    "title": "Potato",
+    "text": "Potato",
     "id": 1
+  },
+  {
+    "title": "New stuff",
+    "text": "new note",
+    "id": 2
   }
 ]
