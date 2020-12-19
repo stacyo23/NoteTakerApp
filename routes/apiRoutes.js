@@ -1,6 +1,8 @@
 const path = require('path'); 
 const fs = require("fs"); 
 
+
+//exports function to server.js
 module.exports = function(app) {
     //reads api data
         app.get("/api/notes", function(req, res) {
@@ -61,7 +63,8 @@ module.exports = function(app) {
                 
                 let allNotes = JSON.parse(data);
                 console.log(JSON.stringify(allNotes) + "will be deleted");
-        
+                
+                //filters out note to be deleted    
                 allNotes = allNotes.filter(function(data) {
                     return data.id !=req.params.id;
                 });
